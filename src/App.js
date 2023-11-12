@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieList from '@/components/MovieList/MovieList';
-import styles from "./style/SWFavorits.module.css"
-import stylesLoading from "./style/SWFavorits_loading.module.css"
+import styles from "./style/SWFavourites.module.css"
+import stylesLoading from "./style/SWFavourites_loading.module.css"
 import MovieDetails from '@/components/MovieDetails/MovieDetails';
 import DefaultImg from './photos/DefultImg.jpg';
 

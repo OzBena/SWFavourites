@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from "../../style/SWFavorits.module.css";
+import styles from "../../style/SWFavourites.module.css";
 import LikeIcon from "../../photos/Like.png";
 import DislikeIcon from "../../photos/Dislike.png";
 

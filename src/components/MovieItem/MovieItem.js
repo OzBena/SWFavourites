@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../style/SWFavorits.module.css"
+import styles from "../../style/SWFavourites.module.css"
 
 
 function MovieItem({ movie, onMovieSelect }) {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchMovies } from '@/services/api';
 import MovieItem from '@/components/MovieItem/MovieItem';
 import Loading from '@/components/Loading/Loading';
-import styles from "../../style/SWFavorits.module.css"
+import styles from "../../style/SWFavourites.module.css"
 
 function MovieList({ onMovieSelect }) {
   const [movies, setMovies] = useState([]);
