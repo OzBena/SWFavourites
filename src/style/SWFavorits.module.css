@@ -1,0 +1,177 @@
+/*-- App --*/
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(10px);
+  box-shadow: 0 0 0 10px black;
+}
+
+/*-- MovieList --*/
+.listContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1%;
+  margin-top: 3%;
+}
+/*-- MovieItem --*/
+
+.MovieItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.MovieItemContainer:hover {
+  box-shadow: 0 0 0 5px black;
+  border-radius: 15px;
+  margin-top: -1%;
+  height: fit-content;
+}
+
+.MovieItemImg {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: scale-down;
+  border-radius: 10px;
+}
+
+.fadeImage {
+  transition: opacity 300ms ease-in-out;
+}
+
+.hiddenImage {
+  opacity: 0;
+}
+
+.visibleImage {
+  opacity: 1;
+}
+
+.MovieItemHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(8px);
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+}
+
+/*-- MovieDetails --*/
+
+.MovieDetailsContainer {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.MovieDetailsLikeContainer {
+  position: absolute;
+  width: fit-content;
+  top: 3%;
+  left: 11%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.MovieDetailsLike {
+  width: 50px;
+}
+
+.MovieDetailsImgContainer {
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 20%;
+  max-height: 600px;
+  justify-content: center;
+  position: relative;
+}
+.MovieDetailsImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.MovieDetailsHeader {
+  position: absolute;
+  width: fit-content;
+  bottom: 0;
+  left: 11%;
+  right: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-size: xxx-large;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;
+}
+
+.MovieDetailsEpisodeHeader {
+  position: absolute;
+  width: fit-content;
+  bottom: 0;
+  left: 11.5%;
+  right: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-size: x-large;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;
+}
+
+@media (max-width: 1490px) {
+  .backgroundImage {
+    min-width: 800px;
+    width: 100%;
+    min-height: 1730px;
+    object-fit: cover;
+    box-shadow: 0 0 0 0 black;
+    overflow: scroll;
+  }
+
+  .listContainer {
+    width: 100%;
+    min-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3%));
+    gap: 2%;
+    margin-top: 3%;
+    padding: 0;
+    margin-left: 50px;
+    position: absolute;
+  }
+  .MovieItemContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .MovieDetailsContainer {
+    margin-top: auto;
+    min-width: 750px;
+  }
+}
